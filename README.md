@@ -19,7 +19,7 @@ This is a basic Laravel project that exposes an API endpoint to greet visitors, 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/hello-api.git
+   git clone https://github.com/dev-tams/hello-api.git
    cd hello-api
 
 2. **Install dependencies:**
@@ -41,7 +41,7 @@ This is a basic Laravel project that exposes an API endpoint to greet visitors, 
 
 6. **Access the API endpoint:**
     Open your browser and go to:
-``arduino
+
 http://127.0.0.1:8000/api/hello
 
 ## Code of Conduct
