@@ -9,13 +9,23 @@ use Illuminate\Support\Facades\Http;
 
 class HelloController extends Controller
 {
-    public function post(Request $request)
+
+  /**
+     * This endpoint retrieves user city by ip and fetch temp data
+     * 
+     * 
+     * @response 200
+     *
+     */
+
+
+    public function store(Request $request)
     {
         $name = $request->string("name")->trim();
-      //  $userIp = $request->ip();
+        $userIp = $request->ip();
 
       //Use  google ip when testing in local host
-        $userIp = '8.8.8.8'; 
+        //$userIp = '8.8.8.8'; 
 
         $location = Http::get("https://ipapi.co/{$userIp}/json/");
         $locationData = $location->json();
