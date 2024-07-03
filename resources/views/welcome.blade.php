@@ -8,10 +8,10 @@
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h3 class="text-2xl font-bold mb-6 text-center">Hello there</h3>
+        <h1 class="text-2xl font-bold mb-6 text-center">Welcome to the Hello App</h1>
         <p class="text-gray-600 mb-8 text-center">Enter your name to get personalized weather information.</p>
         
-        <form method="POST" action="/hello">
+        <form method="POST" action="{{ url('/api/hello') }}">
             @csrf
             <div class="space-y-4">
                 <div>
@@ -27,6 +27,3 @@
     </div>
 </body>
 </html>
-
-       
-  

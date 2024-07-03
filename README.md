@@ -12,6 +12,7 @@ This is a basic Laravel project that exposes an API endpoint to greet visitors, 
 
 - PHP 7.4 or higher
 - Composer
+- Laragon (for SSL in localhost)
 - Laravel 8 or higher
 - API key for a weather service (e.g., OpenWeatherMap)
 
@@ -37,6 +38,7 @@ This is a basic Laravel project that exposes an API endpoint to greet visitors, 
 5. **Usage:**
  - Run the development server:
     ```bash
+    Open Laragon apache, enable SSL
     php artisan serve
 
 6. **Access the API endpoint:**
