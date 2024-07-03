@@ -29,16 +29,15 @@ class HelloController extends Controller
 
         $location = Http::get("https://ipapi.co/{$userIp}/json/");
         $locationData = $location->json();
-         $city = $locationData ['city'];
-
-       $temperature = $this->getWeather($city) ?? "Cant find accurate temp for this location";
+        $city = $locationData ['city'];
        $weatherData = $this->getWeather($city);
+       $greeting =  "Hello " .$name ." Here's your city weather info";
     
          return response()->json([
-            "user_ip" => $userIp,
-            "location" => $city,
-            "name" =>  $name,
-            'weatherData' => $weatherData,
+            $greeting,
+           "with IP" => $userIp,
+            "and city" => $city,
+            $weatherData,
 
          ]);
     }

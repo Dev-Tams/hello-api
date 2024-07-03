@@ -1,6 +1,6 @@
 # Hello API
 
-This is a basic Laravel project that exposes an API endpoint to greet visitors, show their IP address, city location, and the current temperature in that city.
+This is a basic Laravel project that exposes an API endpoint to greet visitors, show their IP address, city location, and the current weather data in that city.
 
 ## Features
 
